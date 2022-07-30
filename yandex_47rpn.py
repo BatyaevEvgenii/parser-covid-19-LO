@@ -1,7 +1,7 @@
 import requests
 import json
 
-api_key = '9147c5de-b3b6-4002-b254-8b224a3603e0'
+api_key = 'YOUR_API_KEY'
 uri = 'https://geocode-maps.yandex.ru/1.x/?'
 
 with open('cities.json', 'r') as read_file:
