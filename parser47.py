@@ -35,18 +35,14 @@ with open('list.html', 'w') as output_file:
 
         if (len(columns) == 4 ):
             city = columns[0].text.strip()
-            # peopleSick = columns[2].contents[0].strip()
-            # peopleHealth = columns[3].contents[0].strip()
             peopleSick = columns[2].text.strip()
             peopleHealth = columns[3].text.strip()
-            # count += 1
             arrayOfCOVID.append({'city': city, 'peopleIll': peopleSick, 'peopleHealth': peopleHealth})
 
         if (len(columns) != 4):
             city = columns[2].text.strip()
             peopleSick = columns[4].text.strip()
             peopleHealth = columns[5].text.strip()
-            # count += 1
             arrayOfCOVID.append({'city': city, 'peopleIll': peopleSick, 'peopleHealth': peopleHealth})
         count += 1
     

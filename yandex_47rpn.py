@@ -12,9 +12,6 @@ with open('covidMap.json', 'w', encoding='utf8') as output_file:
 
     covidMap = {
         "type": "FeatureCollection",
-        # "metadata": {
-        #     "name": "COVID-19 L0",
-        #     "creator": "Yandex Map Constructor"},
         "features": features
     }
 
